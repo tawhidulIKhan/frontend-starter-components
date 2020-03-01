@@ -413,3 +413,53 @@ body {
       margin-bottom: 51px;
       }
   
+  /* Iconbox style 1 */
+
+  .iconbox-style1{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    padding: 50px 30px 59px 30px;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .iconbox-style1 .icon-block{
+    margin-bottom: 30px;
+  }
+  .iconbox-style1 .heading{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 18px;
+    transition: all 500ms ease;
+  }
+
+  /* Iconbox style 2 */
+
+  .iconbox-style2{
+    position: relative;
+    padding-left: 83px;
+    padding-right: 24px
+  }
+
+  .iconbox-style2 .icon-block{
+    position: absolute;
+    left:0;
+    top:0;
+  }
+
+  .iconbox-style2 .heading{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: all 500ms ease;
+  }
