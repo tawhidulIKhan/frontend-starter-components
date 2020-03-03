@@ -1,143 +1,872 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
 
-<title>Frontend Starter Boilerplate - HTML 5 Template Preview</title>
+        <title>Frontend Starter Boilerplate - HTML 5 Template Preview</title>
 
-<!-- Fav Icon -->
-<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+        <!-- Fav Icon -->
+        <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
 
-<!-- Template Stylesheets -->
-<link href="assets/css/all.min.css" rel="stylesheet">
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/css/animate.css" rel="stylesheet">
-<link href="assets/css/magnific-popup.css" rel="stylesheet">
-<link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-<link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
-<link href="assets/css/imagebg.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<style>
-    .container-large{
-        position: relative;
-    }
-    .action-bar{
-    background-color: #ddd;
-    padding: 5px;
-    display: flex;
-    margin-bottom: 3px;
-        }
-</style>
+        <!-- Template Stylesheets -->
+        <link
+            href="assets/icons/fontawesome-free-5.12.1-web/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/animate.css" rel="stylesheet" />
+        <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+        <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="assets/css/imagebg.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="development/css/style.css" rel="stylesheet" />
+        <style>
+            .container-large {
+                position: relative;
+            }
+            .action-bar {
+                background-color: #ddd;
+                padding: 5px;
+                display: flex;
+                margin-bottom: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Preloader -->
 
-</head>
-<body>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-2">
+                    <div class="sidebar border-right p-2 sticky-top h-100">
+                        <h5 class="border-bottom p-2 text-uppercase">
+                            Components
+                        </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#banner"
+                                    >Banner</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#icon-box"
+                                    >Icon box</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#price"
+                                    >Price</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#videos"
+                                    >Videos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 p-5">
+                    <!-- 
+                        =============================================
+                                        Banner Start
+                        ==============================================
+                    -->
+                    <div id="banner">
+                        <h2 class="font-weight-bold">#Banner</h2>
+                        <!-- Action start -->
+                        <div class="action-bar mt-4">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="banner-style-1-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="banner-style-1-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
 
-    <!-- Preloader -->
-    <div class="preloader"></div>
-    <div class="container-large">
-
-        <!-- Action start -->
-        <div class="action-bar mt-4">
-            <div class="ml-auto">           
-               <button class="btn btn-primary btn-sm" id="banner-style-1-html">
-                   Copy HTML
-               </button>
-               <button class="btn btn-primary btn-sm ml-2" id="banner-style-1-css">
-                   Copy CSS
-               </button>
-           </div>
-        </div>
-        <!-- Action end -->
-
-        <!--
+                        <!--
             =========================
                  Banner One Start
             =========================
          -->
-         <section class="banner banner-style-1 image-bg-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="content-block">
-                            <h1 class="heading">Profect App For Boost Your Business</h1>
-                            <p class="desc">The collapse of the online-advertising market in 2001 made marketing on the Internet seem even less compelling.</p>
-                            <button>Buy Now</button>
-                        </div>                    
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="image-block">
-                            <img src="" />
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-        </section>    
-        <!--
+                        <section class="banner banner-style-1 image-bg-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="content-block">
+                                            <h1 class="heading">
+                                                Profect App For Boost Your
+                                                Business
+                                            </h1>
+                                            <p class="desc">
+                                                The collapse of the
+                                                online-advertising market in
+                                                2001 made marketing on the
+                                                Internet seem even less
+                                                compelling.
+                                            </p>
+                                            <button>Buy Now</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="image-block">
+                                            <img src="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--
             =========================
                  Banner One End
             =========================
          -->
-    </div>
 
-    <div class="container-large my-5">
-        <!-- Action start -->
-        <div class="action-bar mt-4">
-            <div class="ml-auto">           
-               <button class="btn btn-primary btn-sm" id="banner-style-2-html">
-                   Copy HTML
-               </button>
-               <button class="btn btn-primary btn-sm ml-2" id="banner-style-2-css">
-                   Copy CSS
-               </button>
-           </div>
-        </div>
-        <!-- Action end -->
+                        <!-- Action start -->
+                        <div class="action-bar mt-4">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="banner-style-2-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="banner-style-2-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
 
-        <!--
+                        <!--
             =========================
                  Banner One Start
             =========================
          -->
-        <section class="banner banner-style-1 image-bg-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="content-block">
-                            <h1 class="heading">Profect App For Boost Your Business</h1>
-                            <p class="desc">The collapse of the online-advertising market in 2001 made marketing on the Internet seem even less compelling.</p>
-                            <button>Buy Now</button>
-                        </div>                    
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="image-block">
-                            <img src="" />
-                        </div>                    
-                    </div>
-                </div>
-            </div>
-        </section>    
-        <!--
+                        <section class="banner banner-style-1 image-bg-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="content-block">
+                                            <h1 class="heading">
+                                                Profect App For Boost Your
+                                                Business
+                                            </h1>
+                                            <p class="desc">
+                                                The collapse of the
+                                                online-advertising market in
+                                                2001 made marketing on the
+                                                Internet seem even less
+                                                compelling.
+                                            </p>
+                                            <button>Buy Now</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="image-block">
+                                            <img src="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--
             =========================
                  Banner One End
             =========================
          -->
-    </div>
+                    </div>
 
-<!-- Template Plugins -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
+                    <!-- 
+                        =============================================
+                                        Banner End
+                        ==============================================
+                    -->
 
-<!-- Template Main Script -->
-<script src="assets/js/script.js"></script>
+                    <!-- 
+                        =============================================
+                                        Icon box start
+                        ==============================================
+                    -->
+                    <div id="icon-box" class="mt-4 border-top pt-3 d-block">
+                        <h2>#Icon Box</h2>
+                        <!-- Action start -->
+                        <div class="action-bar mt-4 mb-3">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="icon-box-style-1-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="icon-box-style-1-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
 
-<!-- Examples Scripts -->
-<script src="./assets/js/clipboard.js/dist/clipboard.min.js"></script>
-<script src="./assets/js/script.js"></script>
-</body>
+                        <section class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <!-- icon box style one start -->
+                                    <div class="iconbox-style1 text-center">
+                                        <div class="icon-block">
+                                            <img
+                                                src="assets/images/icons/1.png"
+                                            />
+                                        </div>
+                                        <div class="txt-block">
+                                            <h4 class="heading">
+                                                Easy to customize
+                                            </h4>
+                                            <p>
+                                                Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- icon box style one start -->
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <!-- icon box style one start -->
+                                    <div class="iconbox-style1 text-center">
+                                        <div class="icon-block">
+                                            <img
+                                                src="assets/images/icons/2.png"
+                                            />
+                                        </div>
+                                        <div class="txt-block">
+                                            <h4 class="heading">
+                                                Easy to customize
+                                            </h4>
+                                            <p>
+                                                Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- icon box style one start -->
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <!-- icon box style one start -->
+                                    <div class="iconbox-style1 text-center">
+                                        <div class="icon-block">
+                                            <img
+                                                src="assets/images/icons/3.png"
+                                            />
+                                        </div>
+                                        <div class="txt-block">
+                                            <h4 class="heading">
+                                                Easy to customize
+                                            </h4>
+                                            <p>
+                                                Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- icon box style one start -->
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Action start -->
+                        <div class="action-bar mt-4 mb-3">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="icon-box-style-2-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="icon-box-style-2-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
+
+                        <section class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <!-- icon box style two start -->
+                                    <div class="iconbox-style2">
+                                        <div class="icon-block">
+                                            <img
+                                                src="assets/images/icons/style2/1.png"
+                                            />
+                                        </div>
+                                        <div class="txt-block">
+                                            <h4 class="heading">
+                                                Easy to customize
+                                            </h4>
+                                            <p>
+                                                Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- icon box style two start -->
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <!-- icon box style two start -->
+                                    <div class="iconbox-style2">
+                                        <div class="icon-block">
+                                            <img
+                                                src="assets/images/icons/style2/2.png"
+                                            />
+                                        </div>
+                                        <div class="txt-block">
+                                            <h4 class="heading">
+                                                Easy to customize
+                                            </h4>
+                                            <p>
+                                                Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- icon box style two start -->
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <!-- icon box style two start -->
+                                    <div class="iconbox-style2">
+                                        <div class="icon-block">
+                                            <img
+                                                src="assets/images/icons/style2/3.png"
+                                            />
+                                        </div>
+                                        <div class="txt-block">
+                                            <h4 class="heading">
+                                                Easy to customize
+                                            </h4>
+                                            <p>
+                                                Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- icon box style two start -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- 
+                        =============================================
+                                        Icon box End
+                        ==============================================
+                    -->
+
+                    <!-- 
+                        =============================================
+                                        Pricing table start
+                        ==============================================
+                    -->
+
+                    <div id="price" class="border-top mt-3 pt-3">
+                        <h2>#Pricing Table</h2>
+                        <!-- Action start -->
+                        <div class="action-bar mt-4 mb-3">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="video-style1-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="video-style1-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
+                        <section class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <!-- price style one start -->
+                                    <div class="pricing-table-one">
+                                        <div class="table-header">
+                                            <h1 class="price">
+                                                $25<span>/MO</span>
+                                            </h1>
+                                            <p class="name">Starter</p>
+                                            <img
+                                                src="assets/images/prices/1.png"
+                                                alt="Price"
+                                            />
+                                        </div>
+                                        <div class="table-content">
+                                            <ul>
+                                                <li>
+                                                    Power And Predictive Dialing
+                                                </li>
+                                                <li>
+                                                    Quality &amp; Customer
+                                                    Experience
+                                                </li>
+                                                <li>
+                                                    24/7 phone and email support
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="table-footer">
+                                            <a href="#">Buy Now</a>
+                                        </div>
+                                    </div>
+                                    <!-- price style one end -->
+                                </div>
+                                <div class="col-4">
+                                    <!-- price style one start -->
+                                    <div class="pricing-table-one">
+                                        <div class="table-header">
+                                            <h1 class="price">
+                                                $25<span>/MO</span>
+                                            </h1>
+                                            <p class="name">Starter</p>
+                                            <img
+                                                src="assets/images/prices/1.png"
+                                                alt="Price"
+                                            />
+                                        </div>
+                                        <div class="table-content">
+                                            <ul>
+                                                <li>
+                                                    Power And Predictive Dialing
+                                                </li>
+                                                <li>
+                                                    Quality &amp; Customer
+                                                    Experience
+                                                </li>
+                                                <li>
+                                                    24/7 phone and email support
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="table-footer">
+                                            <a href="#">Buy Now</a>
+                                        </div>
+                                    </div>
+                                    <!-- price style one end -->
+                                </div>
+                                <div class="col-4">
+                                    <!-- price style one start -->
+                                    <div class="pricing-table-one">
+                                        <div class="table-header">
+                                            <h1 class="price">
+                                                $25<span>/MO</span>
+                                            </h1>
+                                            <p class="name">Starter</p>
+                                            <img
+                                                src="assets/images/prices/1.png"
+                                                alt="Price"
+                                            />
+                                        </div>
+                                        <div class="table-content">
+                                            <ul>
+                                                <li>
+                                                    Power And Predictive Dialing
+                                                </li>
+                                                <li>
+                                                    Quality &amp; Customer
+                                                    Experience
+                                                </li>
+                                                <li>
+                                                    24/7 phone and email support
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="table-footer">
+                                            <a href="#">Buy Now</a>
+                                        </div>
+                                    </div>
+                                    <!-- price style one end -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Action start -->
+                        <div class="action-bar mt-4 mb-3">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="video-style1-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="video-style1-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
+                        <section class="container">
+                            <div class="row">
+                                <div
+                                    class="col-lg-3 col-md-12 col-sm-12 feature-column"
+                                >
+                                    <div class="feature-inner">
+                                        <h2>Unlimited Campaigns</h2>
+                                        <ul class="list clearfix">
+                                            <li>Basic Donor Data</li>
+                                            <li>Team Fundraising</li>
+                                            <li>Customizable Emails</li>
+                                            <li>Complex Programs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                    <div class="pricing-table-two">
+                                        <div class="block-inner clearfix">
+                                            <div class="pricing-table">
+                                                <div class="table-header">
+                                                    <h3 class="title">Start</h3>
+                                                    <h1 class="price">
+                                                        <span>$</span>200
+                                                    </h1>
+                                                    <div class="text">
+                                                        Per Month
+                                                    </div>
+                                                </div>
+                                                <div class="table-content">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-times"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-times"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-times"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table-footer">
+                                                    <a href="#">Choose Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-table">
+                                                <div class="table-header">
+                                                    <h3 class="title">PRO</h3>
+                                                    <h1 class="price">
+                                                        <span>$</span>320
+                                                    </h1>
+                                                    <div class="text">
+                                                        Per Month
+                                                    </div>
+                                                </div>
+                                                <div class="table-content">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-times"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-times"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table-footer">
+                                                    <a href="#">Choose Plan</a>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-table">
+                                                <div class="table-header">
+                                                    <h3 class="title">
+                                                        Premium
+                                                    </h3>
+                                                    <h1 class="price">
+                                                        <span>$</span>450
+                                                    </h1>
+                                                    <div class="text">
+                                                        Per Month
+                                                    </div>
+                                                </div>
+                                                <div class="table-content">
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                        <li>
+                                                            <i
+                                                                class="fas fa-check"
+                                                            ></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table-footer">
+                                                    <a href="#">Choose Plan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- 
+                        =============================================
+                                        Pricing Table End
+                        ==============================================
+                    -->
+
+                    <!-- 
+                        =============================================
+                                        Video item start
+                        ==============================================
+                    -->
+
+                    <div id="videos">
+                        <h2>#Video Item</h2>
+                        <!-- Action start -->
+                        <div class="action-bar mt-4 mb-3">
+                            <div class="ml-auto">
+                                <button
+                                    class="btn btn-primary btn-sm"
+                                    id="video-style1-html"
+                                >
+                                    Copy HTML
+                                </button>
+                                <button
+                                    class="btn btn-primary btn-sm ml-2"
+                                    id="video-style1-css"
+                                >
+                                    Copy CSS
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Action end -->
+                        <section class="container">
+                            <div class="row">
+                                <div class="col-10 m-auto">
+                                    <!-- video style one start -->
+                                    <div class="video-style-one image-bg-2">
+                                        <div class="inner-content text-center">
+                                            <a
+                                                class="play-video"
+                                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                            >
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- video style one end -->
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="action-bar mt-4 mb-3">
+                                        <div class="ml-auto">
+                                            <button
+                                                class="btn btn-primary btn-sm"
+                                                id="video-btn-style1-html"
+                                            >
+                                                Copy HTML
+                                            </button>
+                                            <button
+                                                class="btn btn-primary btn-sm ml-2"
+                                                id="video-btn-style1-css"
+                                            >
+                                                Copy CSS
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- video button style one start -->
+                                    <div class="video-btn-style1">
+                                        <div class="inner-content">
+                                            <a
+                                                class="btn play-video"
+                                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                            >
+                                                Play video
+                                                <span>
+                                                    <i class="fas fa-play"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- video button style one end -->
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="action-bar mt-4 mb-3">
+                                        <div class="ml-auto">
+                                            <button
+                                                class="btn btn-primary btn-sm"
+                                                id="video-btn-style2-html"
+                                            >
+                                                Copy HTML
+                                            </button>
+                                            <button
+                                                class="btn btn-primary btn-sm ml-2"
+                                                id="video-btn-style2-css"
+                                            >
+                                                Copy CSS
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- video button style one start -->
+                                    <div class="video-btn-style2">
+                                        <div class="inner-content">
+                                            <a
+                                                class="play-video"
+                                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                            >
+                                                <span>
+                                                    <i class="fas fa-play"></i>
+                                                </span>
+                                                Watch the video
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- video button style one end -->
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="action-bar mt-4 mb-3">
+                                        <div class="ml-auto">
+                                            <button
+                                                class="btn btn-primary btn-sm"
+                                                id="video-btn-style3-html"
+                                            >
+                                                Copy HTML
+                                            </button>
+                                            <button
+                                                class="btn btn-primary btn-sm ml-2"
+                                                id="video-btn-style3-css"
+                                            >
+                                                Copy CSS
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- video button style one start -->
+                                    <div class="video-btn-style2">
+                                        <div class="inner-content">
+                                            <a
+                                                class="play-video"
+                                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                            >
+                                                <span class="with-pulse-effect">
+                                                    <i class="fas fa-play"></i>
+                                                </span>
+                                                Watch the video
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- video button style one end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                        =============================================
+                                        Video item End
+                        ==============================================
+                    -->
+
+                    <!-- 
+                        =============================================
+                                        Pricing box start
+                        ==============================================
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Template Plugins -->
+        <script src="assets/icons/fontawesome-free-5.12.1-web/js/all.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+
+        <!-- Template Main Script -->
+        <script src="assets/js/script.js"></script>
+
+        <!-- Examples Scripts -->
+        <script src="development/js/clipboard.js/dist/clipboard.min.js"></script>
+        <script src="development/js/copy.js"></script>
+    </body>
 </html>
